@@ -1,8 +1,9 @@
 extends Area2D
 @onready var crosshair: Marker2D = $pivot/crosshair
+var enemys_in_range
 
 func _process(delta: float) -> void:
-	var enemys_in_range = get_overlapping_bodies()
+	enemys_in_range = get_overlapping_bodies()
 	if enemys_in_range.size() > 0:
 		var target_enemy = enemys_in_range.front()
 		look_at(target_enemy.global_position)
@@ -16,4 +17,5 @@ func shoot():
 
 
 func _on_timer_timeout() -> void:
-	shoot()
+	if enemys_in_range.size() > 0:
+		shoot()

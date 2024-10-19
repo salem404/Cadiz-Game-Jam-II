@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: float = 100
+@export var speed: float = 300
 @export var starting_direction: Vector2 = Vector2(0, 1)
 
 @onready var animation_tree = $AnimationTree
@@ -26,7 +26,6 @@ func update_animation_parameters(move_input: Vector2):
 	if (move_input != Vector2.ZERO):
 		animation_tree.set("parameters/Walk/blend_position", move_input)
 		animation_tree.set("parameters/Idle/blend_position", move_input)
-		
 
 func pick_new_state():
 	if(velocity != Vector2.ZERO):

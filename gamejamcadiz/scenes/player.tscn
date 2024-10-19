@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bbwb252etvj1g" path="res://scenes/gun.tscn" id="3_1r0p0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7duok"]
-size = Vector2(21.8861, 20)
+size = Vector2(23.4709, 61.3269)
 
 [sub_resource type="Animation" id="Animation_ntuou"]
 length = 0.001
@@ -32,7 +32,7 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.0333333, 0.5),
+"times": PackedFloat32Array(0.0333333, 0.566667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [1, 2]
@@ -235,7 +235,7 @@ states/Walk/position = Vector2(637.845, 100.293)
 transitions = ["Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_sm3le"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_rr0he"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_1j56u")]
 graph_offset = Vector2(-31.6548, 0)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_5i3k2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -245,7 +245,7 @@ vframes = 4
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.809907, 24)
+position = Vector2(-0.190091, 8.5)
 scale = Vector2(1.26198, -0.896834)
 shape = SubResource("RectangleShape2D_7duok")
 
@@ -258,7 +258,7 @@ autoplay = "idle_down"
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_8bk68")
 anim_player = NodePath("../AnimationPlayer")
-parameters/Idle/blend_position = Vector2(0.0101781, -0.053304)
+parameters/Idle/blend_position = Vector2(-0.127186, 0.690426)
 parameters/Walk/blend_position = Vector2(-0.0229008, 0.247137)
 
 [node name="Camera2D" type="Camera2D" parent="."]
