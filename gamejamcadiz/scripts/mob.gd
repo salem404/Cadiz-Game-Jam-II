@@ -10,6 +10,7 @@ var health = 2
 
 func _ready() -> void:
 	direction = global_position.direction_to(puerta.global_position)
+	add_to_group("enemy")
 
 func _physics_process(delta: float) -> void:
 	velocity = direction * speed
