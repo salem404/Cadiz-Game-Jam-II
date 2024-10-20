@@ -24,12 +24,24 @@ offset_right = 112.0
 offset_bottom = 105.0
 texture = ExtResource("1_vuhsb")
 
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 2.9
+anchor_bottom = 1.021
+offset_right = -249.0
+offset_bottom = -62.1
+scale = Vector2(7.07225, 2.55332)
+color = Color(1, 1, 1, 0.811765)
+
 [node name="Label" type="Label" parent="TextureRect"]
 layout_mode = 0
 offset_left = 117.0
 offset_top = 30.0
 offset_right = 281.0
 offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "1000 / 1000"
 vertical_alignment = 1
@@ -37,16 +49,19 @@ vertical_alignment = 1
 [node name="Time" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.967
-anchor_top = 0.047
-anchor_right = 0.967
-anchor_bottom = 0.047
-offset_left = -132.64
-offset_top = -29.76
-offset_right = 21.3599
-offset_bottom = 88.24
+anchor_left = 0.904
+anchor_top = 0.014
+anchor_right = 0.984
+anchor_bottom = 0.083
+offset_left = 0.319946
+offset_top = -0.120001
+offset_right = -0.280029
+offset_bottom = 0.359993
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "12000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
