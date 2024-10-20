@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgadihqv807vj"]
+[gd_scene load_steps=7 format=3 uid="uid://bgadihqv807vj"]
 
 [ext_resource type="Texture2D" uid="uid://3v28qomrg5y4" path="res://assets/chiringuitoBoceto.png" id="1_ky045"]
 [ext_resource type="Script" path="res://chiringuito.gd" id="1_qodxh"]
@@ -6,8 +6,22 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iokko"]
 size = Vector2(393, 249)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_k7ww7"]
-radius = 250.186
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_po1st"]
+size = Vector2(428, 302)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_esldb"]
+bg_color = Color(0.898039, 0.45098, 0.45098, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8t8tx"]
+bg_color = Color(0.956863, 0.262745, 0.211765, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="StaticBody2D" type="StaticBody2D"]
 script = ExtResource("1_qodxh")
@@ -23,15 +37,15 @@ shape = SubResource("RectangleShape2D_iokko")
 [node name="hurt" type="Area2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="hurt"]
-position = Vector2(71, 35)
-shape = SubResource("CircleShape2D_k7ww7")
+position = Vector2(73, 16)
+shape = SubResource("RectangleShape2D_po1st")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = -66.0
 offset_top = -199.0
 offset_right = 185.0
 offset_bottom = -172.0
-value = 10.0
-show_percentage = false
+theme_override_styles/background = SubResource("StyleBoxFlat_esldb")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8t8tx")
 
 [connection signal="body_entered" from="hurt" to="." method="_on_hurt_body_entered"]

@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dl85escmovs2n"]
+[gd_scene load_steps=9 format=3 uid="uid://dl85escmovs2n"]
 
 [ext_resource type="PackedScene" uid="uid://c2aqvwte8nnbj" path="res://scenes/player.tscn" id="1_84b0n"]
-[ext_resource type="PackedScene" uid="uid://d1njvm3uskl6o" path="res://scenes/hud.tscn" id="1_ny15h"]
 [ext_resource type="Texture2D" uid="uid://8uygkyohhv87" path="res://assets/tileset.png" id="3_p4i5y"]
 [ext_resource type="PackedScene" uid="uid://bgadihqv807vj" path="res://scenes/chiringuito.tscn" id="4_7lkpu"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="4_d8s5g"]
@@ -2228,10 +2227,6 @@ point_count = 5
 
 [node name="Game" type="Node2D"]
 script = SubResource("GDScript_8kerg")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="HUD" parent="CanvasLayer" instance=ExtResource("1_ny15h")]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_k5sdv")

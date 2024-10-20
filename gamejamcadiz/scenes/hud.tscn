@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1njvm3uskl6o"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_vaca0"]
+[ext_resource type="Texture2D" uid="uid://dduujkkcc6gyu" path="res://assets/money.png" id="1_vuhsb"]
+
+[node name="HUD" type="Control" node_paths=PackedStringArray("label", "timer_label") groups=["hud"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vaca0")
+label = NodePath("TextureRect/Label")
+timer_label = NodePath("Time")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 112.0
+offset_bottom = 105.0
+texture = ExtResource("1_vuhsb")
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 30.0
+offset_right = 254.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 30
+text = "1000 / 1000"
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="."]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 25.0
+offset_right = 1030.0
+offset_bottom = 143.0
+theme_override_font_sizes/font_size = 50
+text = "12000"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

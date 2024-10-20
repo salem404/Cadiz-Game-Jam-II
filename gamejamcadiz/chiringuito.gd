@@ -7,13 +7,13 @@ var health = 100.0
 @onready var progress_bar: ProgressBar = $ProgressBar
 
 func _ready() -> void:
-	progress_bar.value = health 
+	progress_bar.value = health
 
 func make_damage(damage: float):
 		health -= damage
 		progress_bar.value = health 
 		if health <= 0.0:
-			health_depleted.emit()
+			get_tree().change_scene_to_file("res://scenes/game_over.tscn")
 
 #TODO si el enemigo sigue chocando con el chiringuito siga haciendo daño cada X segundos
 func _on_hurt_body_entered(body):
