@@ -4,7 +4,7 @@ extends Area2D
 @onready var sprite_pescado: Sprite2D = $SpritePescado
 
 
-const speed = 500
+static var speed = 500
 const RANGE = 1200
 var travelled_distance = 0
 var random

@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgadihqv807vj"]
 
 [ext_resource type="Texture2D" uid="uid://3v28qomrg5y4" path="res://assets/chiringuitoBoceto.png" id="1_ky045"]
-[ext_resource type="Script" path="res://chiringuito.gd" id="1_qodxh"]
+[ext_resource type="Script" path="res://scripts/chiringuito.gd" id="1_qodxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iokko"]
 size = Vector2(393, 249)

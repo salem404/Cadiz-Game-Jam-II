@@ -5,19 +5,37 @@ extends CharacterBody2D
 @onready var mob: CharacterBody2D = $"."
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var label: Label = $ProgressBar/Label
+@onready var americano: Sprite2D = $Americano
+@onready var frances: Sprite2D = $Frances
+
 
 var direction
 var speed = 100.0
 var health = 0
 var max_health = 2
+var random
+
 
 func _ready() -> void:
 	direction = global_position.direction_to(puerta.global_position)
 	add_to_group("enemy")
 	label.text = str(health) + " / " + str(max_health)
 	progress_bar.value = health 
+	
+	randomize()
+	random = randi() % 2
 
 func _physics_process(delta: float) -> void:
+	
+	if(random == 0):
+		americano.visible = true
+		frances.visible = false
+	else:
+		americano.visible = false
+		frances.visible = true
+		
+	
+	
 	velocity = direction * speed
 	
 	move_and_slide()

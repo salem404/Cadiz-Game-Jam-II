@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://de1gsmg1kggb6"]
+[gd_scene load_steps=7 format=3 uid="uid://de1gsmg1kggb6"]
 
 [ext_resource type="Script" path="res://scripts/mob.gd" id="1_7iesr"]
-[ext_resource type="Texture2D" uid="uid://f1c5a7bhn77b" path="res://assets/spritePrueba.png" id="1_c2iqs"]
+[ext_resource type="Texture2D" uid="uid://gxpxcly50ncu" path="res://assets/americano.png" id="2_4nlxx"]
+[ext_resource type="Texture2D" uid="uid://bov7s73g1p17o" path="res://assets/frances.png" id="3_bj4wa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qgyom"]
 size = Vector2(20, 20.4348)
@@ -26,11 +27,16 @@ collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_7iesr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Americano" type="Sprite2D" parent="."]
+position = Vector2(-4, -1)
+scale = Vector2(0.857143, 0.857143)
+texture = ExtResource("2_4nlxx")
+
+[node name="Frances" type="Sprite2D" parent="."]
 z_index = 3
 position = Vector2(-4.30601, -2.69399)
 scale = Vector2(0.898321, 0.898321)
-texture = ExtResource("1_c2iqs")
+texture = ExtResource("3_bj4wa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, -2)
