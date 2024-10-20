@@ -11,3 +11,5 @@ func _ready() -> void:
 func add_point():
 	score += 500
 	hud.update_score(score, max_score)
+	if score > max_score:
+		get_tree().change_scene_to_file("res://scenes/win.tscn")

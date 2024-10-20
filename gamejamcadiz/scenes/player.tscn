@@ -10,6 +10,7 @@ size = Vector2(42.7899, 90.3177)
 
 [sub_resource type="Animation" id="Animation_ntuou"]
 length = 0.001
+step = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -24,7 +25,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/path = NodePath("AudioStreamPlayer2D:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -107,6 +108,7 @@ tracks/0/keys = {
 resource_name = "walk_down"
 length = 0.65
 loop_mode = 1
+step = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

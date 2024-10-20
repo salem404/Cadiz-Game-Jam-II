@@ -2316,6 +2316,7 @@ point_count = 5
 size = Vector2(505, 2878.5)
 
 [node name="Game" type="Node2D"]
+position = Vector2(-1, 0)
 script = SubResource("GDScript_8kerg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
