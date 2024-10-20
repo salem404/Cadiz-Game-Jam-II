@@ -1,4 +1,153 @@
-[gd_scene format=3 uid="uid://6kw04p1gqnk5"]
+[gd_scene load_steps=26 format=3 uid="uid://6kw04p1gqnk5"]
+
+[ext_resource type="Script" path="res://scripts/win.gd" id="1_2axr2"]
+[ext_resource type="Texture2D" uid="uid://dlk3gfbh14l46" path="res://assets/final.png" id="1_vbbko"]
+[ext_resource type="Texture2D" uid="uid://cx0kx6w7a6kaf" path="res://assets/2f64794a589f5e3d673da1ad2c0eed80.png" id="3_jf1b5"]
+[ext_resource type="Texture2D" uid="uid://bgk1djn681b64" path="res://assets/6b3c7ea53f3511f9a853b8f0a44a7615.png" id="4_o5atn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqlnx"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(0, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ql8bt"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(250, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whq73"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(500, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k66rm"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(750, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_055hp"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(1000, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhmtj"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(1250, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmbjb"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(1500, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28ip1"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(1750, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uws7a"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(2000, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pera0"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(2250, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7iapt"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(2500, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2daqh"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(2750, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnorq"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(3000, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5y4f"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(3250, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81861"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(3500, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxjnk"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(3750, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmv21"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(4000, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puw0v"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(4250, 0, 250, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kmic"]
+atlas = ExtResource("1_vbbko")
+region = Rect2(4500, 0, 250, 167)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ndub2"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_cqlnx")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_ql8bt")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_whq73")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_k66rm")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_055hp")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_dhmtj")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_tmbjb")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_28ip1")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_uws7a")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_pera0")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_7iapt")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_2daqh")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_qnorq")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_d5y4f")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_81861")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_qxjnk")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_hmv21")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_puw0v")
+}, {
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_6kmic")
+}],
+"loop": false,
+"name": &"default",
+"speed": 19.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rv87"]
+size = Vector2(305.17, 85.99)
 
 [node name="win" type="Control"]
 layout_mode = 3
@@ -7,3 +156,80 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2axr2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.996
+anchor_bottom = 1.021
+offset_right = -0.320068
+offset_bottom = 0.319946
+expand_mode = 2
+stretch_mode = 6
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TextureRect"]
+position = Vector2(967.5, 543.125)
+scale = Vector2(7.716, 7.05239)
+sprite_frames = SubResource("SpriteFrames_ndub2")
+autoplay = "default"
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.407
+anchor_top = 0.636
+anchor_right = 0.595
+anchor_bottom = 0.77
+offset_left = 0.559998
+offset_top = 0.119934
+offset_right = -0.400024
+offset_bottom = 0.399963
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_jf1b5")
+
+[node name="entrar" type="TouchScreenButton" parent="TextureRect3"]
+position = Vector2(171, 70)
+scale = Vector2(1.60428, 2.302)
+shape = SubResource("RectangleShape2D_3rv87")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.403
+anchor_top = 0.836
+anchor_right = 0.594
+anchor_bottom = 0.936
+offset_left = 35.2399
+offset_top = -13.88
+offset_right = -30.4801
+offset_bottom = 0.119934
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("4_o5atn")
+
+[node name="salir" type="TouchScreenButton" parent="TextureRect4"]
+position = Vector2(143, 59)
+scale = Vector2(1.59852, 1.60105)
+shape = SubResource("RectangleShape2D_3rv87")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.204
+anchor_right = 0.5
+anchor_bottom = 0.204
+offset_left = -957.0
+offset_top = -79.32
+offset_right = 958.0
+offset_bottom = 78.68
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "HAS GANADO!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TextureRect3/entrar" to="." method="_on_entrar_pressed"]
+[connection signal="pressed" from="TextureRect4/salir" to="." method="_on_salir_pressed"]
