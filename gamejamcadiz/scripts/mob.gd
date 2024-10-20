@@ -5,8 +5,8 @@ extends CharacterBody2D
 @onready var mob: CharacterBody2D = $"."
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var label: Label = $ProgressBar/Label
-@onready var americano: Sprite2D = $Americano
-@onready var frances: Sprite2D = $Frances
+@onready var frances: AnimatedSprite2D = $Frances
+@onready var americano: AnimatedSprite2D = $Americano
 
 
 var direction

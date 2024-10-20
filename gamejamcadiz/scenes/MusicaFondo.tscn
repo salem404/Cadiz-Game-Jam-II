@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://6x86uyvd6la8"]
+
+[ext_resource type="AudioStream" uid="uid://byqs3515215yw" path="res://assets/audio/himnoAndaluciaProv.wav" id="1_5sr3q"]
+
+[node name="MusicaFondo" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_5sr3q")
+autoplay = true
+bus = &"Musica de fondo"

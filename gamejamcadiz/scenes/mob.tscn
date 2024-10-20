@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://de1gsmg1kggb6"]
+[gd_scene load_steps=19 format=3 uid="uid://de1gsmg1kggb6"]
 
 [ext_resource type="Script" path="res://scripts/mob.gd" id="1_7iesr"]
-[ext_resource type="Texture2D" uid="uid://gxpxcly50ncu" path="res://assets/americano.png" id="2_4nlxx"]
-[ext_resource type="Texture2D" uid="uid://bov7s73g1p17o" path="res://assets/frances.png" id="3_bj4wa"]
+[ext_resource type="Texture2D" uid="uid://cew2x2i0sbmrs" path="res://assets/frances_walk.png" id="2_aug3b"]
+[ext_resource type="Texture2D" uid="uid://dstoonfbvuaa0" path="res://assets/americano_walk.png" id="3_g7rs1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qgyom"]
 size = Vector2(20, 20.4348)
@@ -21,22 +21,97 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vx0pb"]
+atlas = ExtResource("2_aug3b")
+region = Rect2(0, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avue8"]
+atlas = ExtResource("2_aug3b")
+region = Rect2(112, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ulfn"]
+atlas = ExtResource("2_aug3b")
+region = Rect2(224, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqrql"]
+atlas = ExtResource("2_aug3b")
+region = Rect2(336, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lch2e"]
+atlas = ExtResource("2_aug3b")
+region = Rect2(448, 0, 112, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sst1p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vx0pb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avue8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ulfn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqrql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lch2e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k2k1n"]
+atlas = ExtResource("3_g7rs1")
+region = Rect2(0, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_400sp"]
+atlas = ExtResource("3_g7rs1")
+region = Rect2(112, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri4un"]
+atlas = ExtResource("3_g7rs1")
+region = Rect2(224, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0u0mv"]
+atlas = ExtResource("3_g7rs1")
+region = Rect2(336, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0m1f"]
+atlas = ExtResource("3_g7rs1")
+region = Rect2(448, 0, 112, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w07q0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k2k1n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_400sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri4un")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0u0mv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0m1f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="mob" type="CharacterBody2D" groups=["enemy"]]
 position = Vector2(5, 0)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_7iesr")
-
-[node name="Americano" type="Sprite2D" parent="."]
-position = Vector2(-4, -1)
-scale = Vector2(0.857143, 0.857143)
-texture = ExtResource("2_4nlxx")
-
-[node name="Frances" type="Sprite2D" parent="."]
-z_index = 3
-position = Vector2(-4.30601, -2.69399)
-scale = Vector2(0.898321, 0.898321)
-texture = ExtResource("3_bj4wa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, -2)
@@ -61,3 +136,15 @@ offset_bottom = 27.0
 text = "0/2"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Frances" type="AnimatedSprite2D" parent="."]
+position = Vector2(-5, 0)
+scale = Vector2(0.910714, 0.910714)
+sprite_frames = SubResource("SpriteFrames_sst1p")
+autoplay = "default"
+
+[node name="Americano" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4, 0)
+scale = Vector2(0.919643, 0.919643)
+sprite_frames = SubResource("SpriteFrames_w07q0")
+autoplay = "default"

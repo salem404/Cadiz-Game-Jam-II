@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://b20vde5rj3ams"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_8bx8y"]
+[ext_resource type="Texture2D" uid="uid://bk6h55a0w0tu5" path="res://e3bd51a1bc6a1b57cbea87cbfc280f89.jpg" id="2_p0k7y"]
+[ext_resource type="Texture2D" uid="uid://dbyj6wyvs2otb" path="res://13ddb9dac6ffa399b1bd5443531a9fab.png" id="3_4f4v6"]
+[ext_resource type="Texture2D" uid="uid://cddxwtd2yt0rp" path="res://Captura_de_pantalla_2024-10-20_122039-removebg-preview.png" id="4_6i256"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_raot0"]
+size = Vector2(305.17, 85.99)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8bx8y")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_p0k7y")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="entrar" type="TouchScreenButton" parent="."]
+position = Vector2(438, 355)
+texture_normal = ExtResource("3_4f4v6")
+shape = SubResource("RectangleShape2D_raot0")
+
+[node name="CapturaDePantalla2024-10-20122039-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(616, 194)
+scale = Vector2(1.46937, 1.6148)
+texture = ExtResource("4_6i256")
+
+[connection signal="pressed" from="entrar" to="." method="_on_entrar_pressed"]

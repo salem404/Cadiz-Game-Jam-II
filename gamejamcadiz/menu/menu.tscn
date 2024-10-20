@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://b20vde5rj3ams"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_8bx8y"]
+[ext_resource type="Texture2D" uid="uid://bk6h55a0w0tu5" path="res://e3bd51a1bc6a1b57cbea87cbfc280f89.jpg" id="2_p0k7y"]
+[ext_resource type="Texture2D" uid="uid://bs3p7yr7vq03i" path="res://Captura_de_pantalla_2024-10-20_122039-removebg-preview-removebg-preview.png" id="4_0cm1w"]
+[ext_resource type="Texture2D" uid="uid://duwyhgcocyl3y" path="res://2f64794a589f5e3d673da1ad2c0eed80.png" id="4_us0lv"]
+[ext_resource type="Texture2D" uid="uid://cakm3pkyh32le" path="res://6b3c7ea53f3511f9a853b8f0a44a7615.png" id="5_omxtk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_raot0"]
+size = Vector2(305.17, 85.99)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8bx8y")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_p0k7y")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.573
+anchor_right = 0.5
+anchor_bottom = 0.573
+offset_left = -551.0
+offset_top = -420.304
+offset_right = 609.0
+offset_bottom = 17.696
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_0cm1w")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.842
+anchor_right = 0.5
+anchor_bottom = 0.842
+offset_left = -20.0
+offset_top = 62.384
+offset_right = 20.0
+offset_bottom = 105.384
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="entrar" type="TouchScreenButton" parent="TextureRect3"]
+position = Vector2(-141, -239)
+scale = Vector2(1.24096, 1.24272)
+texture_normal = ExtResource("4_us0lv")
+shape = SubResource("RectangleShape2D_raot0")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.829
+anchor_right = 0.5
+anchor_bottom = 0.834
+offset_left = -20.0
+offset_top = 70.808
+offset_right = 20.0
+offset_bottom = 107.568
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="salir" type="TouchScreenButton" parent="TextureRect4"]
+position = Vector2(-108, -88)
+scale = Vector2(1.26154, 1.22222)
+texture_normal = ExtResource("5_omxtk")
+shape = SubResource("RectangleShape2D_raot0")
+
+[connection signal="pressed" from="TextureRect3/entrar" to="." method="_on_entrar_pressed"]
+[connection signal="pressed" from="TextureRect4/salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="TextureRect4/salir" to="." method="_on_entrar_pressed"]

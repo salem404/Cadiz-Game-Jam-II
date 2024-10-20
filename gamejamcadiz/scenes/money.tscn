@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://by4amxxt0m4de"]
 
-[ext_resource type="Texture2D" uid="uid://dduujkkcc6gyu" path="res://assets/money.png" id="1_1qfdx"]
+[ext_resource type="Texture2D" uid="uid://qem1xxoqc6kl" path="res://assets/money.png" id="1_1qfdx"]
 [ext_resource type="Script" path="res://scripts/money.gd" id="1_ulf8o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yb5ft"]
@@ -13,7 +13,7 @@ script = ExtResource("1_ulf8o")
 shape = SubResource("CircleShape2D_yb5ft")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.65625, 1.65625)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_1qfdx")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
