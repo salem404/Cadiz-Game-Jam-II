@@ -10,5 +10,4 @@ func _ready() -> void:
 
 func add_point():
 	score += 25
-	print(score)
 	hud.update_score(score, max_score)

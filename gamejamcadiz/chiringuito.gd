@@ -19,3 +19,4 @@ func make_damage(damage: float):
 func _on_hurt_body_entered(body):
 	if body.is_in_group("enemy"):
 		make_damage(10)
+		body.queue_free()

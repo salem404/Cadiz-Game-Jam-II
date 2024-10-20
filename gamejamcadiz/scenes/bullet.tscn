@@ -15,11 +15,18 @@ script = ExtResource("1_lscdg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_lcc7i")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="SpriteGamba" type="Sprite2D" parent="."]
 position = Vector2(-1.43051e-06, 1.43051e-06)
 scale = Vector2(2.7625, 2.7625)
 texture = ExtResource("2_qjij2")
 region_enabled = true
 region_rect = Rect2(111.36, 111.184, 16.6569, 16.9891)
+
+[node name="SpritePescado" type="Sprite2D" parent="."]
+position = Vector2(3, -5)
+scale = Vector2(-3.01321, 3.68716)
+texture = ExtResource("2_qjij2")
+region_enabled = true
+region_rect = Rect2(110.815, 33.3333, 16.7407, 14.2966)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
