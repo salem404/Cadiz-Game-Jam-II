@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgadihqv807vj"]
 
-[ext_resource type="Texture2D" uid="uid://3v28qomrg5y4" path="res://assets/chiringuitoBoceto.png" id="1_ky045"]
 [ext_resource type="Script" path="res://scripts/chiringuito.gd" id="1_qodxh"]
+[ext_resource type="Texture2D" uid="uid://dswikxvllqp5k" path="res://assets/chiringuito.png" id="2_1d1fw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iokko"]
 size = Vector2(393, 249)
@@ -28,7 +28,9 @@ script = ExtResource("1_qodxh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 20
-texture = ExtResource("1_ky045")
+position = Vector2(82, 25)
+scale = Vector2(1.35246, 1.35246)
+texture = ExtResource("2_1d1fw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(70.5, 28)

@@ -18,9 +18,9 @@
 
 ## Resources
 
-| Resource                               | Author        | Source                                                              | License                            | Notes                        |
-| -------------------------------------- | ------------- | ------------------------------------------------------------------- | ---------------------------------- | ---------------------------- |
-| Beach-and-caves-tileset_by_AxulArt.png | AxulArt       | [Itch.io](https://axulart.itch.io/axularts-beach-and-caves-tileset) | [![CC BY 4.0][cc-by-image]][cc-by] | Rescaled from 16x16 to 72x72 |
+| Resource                               | Author        | Source                                                              | License                            | Notes                                          |
+| -------------------------------------- | ------------- | ------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------- |
+| Beach-and-caves-tileset_by_AxulArt.png | AxulArt       | [Itch.io](https://axulart.itch.io/axularts-beach-and-caves-tileset) | [![CC BY 4.0][cc-by-image]][cc-by] | Rescaled from 16x16 to 72x72 & changed colours |
 | Food.png                               | HenrySoftware | [Itch.io](https://henrysoftware.itch.io/pixel-food)                 | [![CC0][cc0-image]][cc-by]         |
 
 
